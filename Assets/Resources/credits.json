@@ -1,0 +1,30 @@
+{
+	"titleSize":40,
+	"nameSize":24,
+	"teams": [
+		{
+			"title": "Programmers",
+			"names": ["Kleber", "Wilker", "Luiz Felipe"]
+		},
+		{
+			"title": "2D Art",
+			"names": ["Fabio", "Giselle"]
+		},
+		{
+			"title": "Localization",
+			"names": ["Marina"]
+		},
+		{
+			"title": "Tools",
+			"names": ["Unity", "Visual Studio Code"]
+		},
+		{
+			"title": "Special Thanks",
+			"names": ["All students"]
+		},
+		{
+			"title": "Acknowledgment",
+			"names": ["Fatec Americana"]
+		}
+	]
+}

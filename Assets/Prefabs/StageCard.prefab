@@ -263,10 +263,10 @@ GameObject:
   - component: {fileID: 4221067848851608602}
   - component: {fileID: 4221067848851608601}
   - component: {fileID: 4221067848851608603}
-  - component: {fileID: 877861312451494162}
   - component: {fileID: 3582866371398734959}
+  - component: {fileID: 6525287752174618322}
   m_Layer: 5
-  m_Name: LevelCard
+  m_Name: StageCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -326,24 +326,6 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
---- !u!114 &877861312451494162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4221067848851608605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 4221067848353375545}
-  m_ScoreUI: {fileID: 4221067848560896195}
-  m_Id: 0
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &3582866371398734959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,7 +369,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 877861312451494162}
+      - m_Target: {fileID: 6525287752174618322}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -398,6 +380,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6525287752174618322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4221067848851608605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37f22dda87299f54b8c5e6718515318d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ContentUI: {fileID: 4221067848353375545}
+  m_ScoreUI: {fileID: 4221067848560896195}
+  m_Stage:
+    id: 0
+    prefix: 
+    score: 0
+    isUnlock: 0
 --- !u!1 &4221067848884277653
 GameObject:
   m_ObjectHideFlags: 0

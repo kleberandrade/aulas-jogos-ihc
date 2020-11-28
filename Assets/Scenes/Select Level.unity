@@ -880,7 +880,6 @@ GameObject:
   - component: {fileID: 264086958}
   - component: {fileID: 264086962}
   - component: {fileID: 264086961}
-  - component: {fileID: 264086960}
   - component: {fileID: 264086959}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -928,12 +927,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -953,7 +952,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 264086960}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -964,24 +963,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &264086960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264086957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 1797263993}
-  m_ScoreUI: {fileID: 1242516107}
-  m_Id: 12
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &264086961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1627,96 +1608,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 228930609}
-  m_LevelCard: {fileID: 4221067848851608605, guid: 430a5c31d488f594ebf95c3f02c67852,
-    type: 3}
+  m_StageCard: {fileID: 0}
   m_Fill: 0
   m_Create: 0
   m_MaxLevel: 21
-  m_Levels:
-  - id: 1
-    prefix: Level
-    score: 0
-    isUnlock: 1
-  - id: 2
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 3
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 4
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 5
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 6
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 7
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 8
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 9
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 10
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 11
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 12
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 13
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 14
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 15
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 16
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 17
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 18
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 19
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 20
-    prefix: Level
-    score: 0
-    isUnlock: 0
-  - id: 21
-    prefix: Level
-    score: 0
-    isUnlock: 0
+  m_Stages: []
 --- !u!4 &365755741
 Transform:
   m_ObjectHideFlags: 0
@@ -2786,7 +2682,6 @@ GameObject:
   - component: {fileID: 579883984}
   - component: {fileID: 579883988}
   - component: {fileID: 579883987}
-  - component: {fileID: 579883986}
   - component: {fileID: 579883985}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -2834,12 +2729,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2859,7 +2754,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 579883986}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -2870,24 +2765,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &579883986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579883983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 1939291320}
-  m_ScoreUI: {fileID: 371308251}
-  m_Id: 14
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &579883987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3155,7 +3032,6 @@ GameObject:
   - component: {fileID: 618026479}
   - component: {fileID: 618026483}
   - component: {fileID: 618026482}
-  - component: {fileID: 618026481}
   - component: {fileID: 618026480}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -3203,12 +3079,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3228,7 +3104,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 618026481}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -3239,24 +3115,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &618026481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618026478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 1331297694}
-  m_ScoreUI: {fileID: 706042726}
-  m_Id: 18
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &618026482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3968,7 +3826,6 @@ GameObject:
   - component: {fileID: 768519741}
   - component: {fileID: 768519745}
   - component: {fileID: 768519744}
-  - component: {fileID: 768519743}
   - component: {fileID: 768519742}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -4016,12 +3873,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4041,7 +3898,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 768519743}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -4052,24 +3909,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &768519743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768519740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 2038871096}
-  m_ScoreUI: {fileID: 1874124887}
-  m_Id: 3
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &768519744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4192,7 +4031,6 @@ GameObject:
   - component: {fileID: 799636226}
   - component: {fileID: 799636230}
   - component: {fileID: 799636229}
-  - component: {fileID: 799636228}
   - component: {fileID: 799636227}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -4240,12 +4078,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4265,7 +4103,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 799636228}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -4276,24 +4114,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &799636228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799636225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 273192324}
-  m_ScoreUI: {fileID: 2101915861}
-  m_Id: 10
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &799636229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4434,7 +4254,6 @@ GameObject:
   - component: {fileID: 817652800}
   - component: {fileID: 817652804}
   - component: {fileID: 817652803}
-  - component: {fileID: 817652802}
   - component: {fileID: 817652801}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -4482,12 +4301,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4507,7 +4326,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 817652802}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -4518,24 +4337,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &817652802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817652799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 1819592610}
-  m_ScoreUI: {fileID: 318437670}
-  m_Id: 16
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &817652803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4580,7 +4381,6 @@ GameObject:
   - component: {fileID: 821100844}
   - component: {fileID: 821100848}
   - component: {fileID: 821100847}
-  - component: {fileID: 821100846}
   - component: {fileID: 821100845}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -4623,17 +4423,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: -1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4653,7 +4453,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 821100846}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -4664,24 +4464,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &821100846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821100843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 694502852}
-  m_ScoreUI: {fileID: 687002218}
-  m_Id: 7
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &821100847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5268,7 +5050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 1492321114}
+  m_FirstSelected: {fileID: 2052503673}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &892568248
@@ -5452,7 +5234,6 @@ GameObject:
   - component: {fileID: 918494668}
   - component: {fileID: 918494672}
   - component: {fileID: 918494671}
-  - component: {fileID: 918494670}
   - component: {fileID: 918494669}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -5500,12 +5281,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5525,7 +5306,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 918494670}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -5536,24 +5317,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &918494670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918494667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 1796592364}
-  m_ScoreUI: {fileID: 1773599193}
-  m_Id: 5
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &918494671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5598,7 +5361,6 @@ GameObject:
   - component: {fileID: 940259940}
   - component: {fileID: 940259944}
   - component: {fileID: 940259943}
-  - component: {fileID: 940259942}
   - component: {fileID: 940259941}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -5646,12 +5408,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5671,7 +5433,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 940259942}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -5682,24 +5444,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &940259942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940259939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 864226217}
-  m_ScoreUI: {fileID: 1887704667}
-  m_Id: 17
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &940259943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6254,7 +5998,6 @@ GameObject:
   - component: {fileID: 1026535045}
   - component: {fileID: 1026535049}
   - component: {fileID: 1026535048}
-  - component: {fileID: 1026535047}
   - component: {fileID: 1026535046}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -6302,12 +6045,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6327,7 +6070,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1026535047}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -6338,24 +6081,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1026535047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026535044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 560052548}
-  m_ScoreUI: {fileID: 1099842951}
-  m_Id: 19
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &1026535048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6400,7 +6125,6 @@ GameObject:
   - component: {fileID: 1031184242}
   - component: {fileID: 1031184246}
   - component: {fileID: 1031184245}
-  - component: {fileID: 1031184244}
   - component: {fileID: 1031184243}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -6448,12 +6172,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6473,7 +6197,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1031184244}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -6484,24 +6208,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1031184244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031184241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 323855194}
-  m_ScoreUI: {fileID: 874229197}
-  m_Id: 15
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &1031184245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8251,7 +7957,6 @@ GameObject:
   - component: {fileID: 1406865286}
   - component: {fileID: 1406865290}
   - component: {fileID: 1406865289}
-  - component: {fileID: 1406865288}
   - component: {fileID: 1406865287}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -8299,12 +8004,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -8324,7 +8029,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1406865288}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -8335,24 +8040,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1406865288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406865285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 331661620}
-  m_ScoreUI: {fileID: 2036010849}
-  m_Id: 2
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &1406865289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8397,7 +8084,6 @@ GameObject:
   - component: {fileID: 1487552486}
   - component: {fileID: 1487552490}
   - component: {fileID: 1487552489}
-  - component: {fileID: 1487552488}
   - component: {fileID: 1487552487}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -8445,12 +8131,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -8470,7 +8156,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1487552488}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -8481,24 +8167,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1487552488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487552485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 964534868}
-  m_ScoreUI: {fileID: 151080217}
-  m_Id: 4
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &1487552489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9441,7 +9109,6 @@ GameObject:
   - component: {fileID: 1598937881}
   - component: {fileID: 1598937885}
   - component: {fileID: 1598937884}
-  - component: {fileID: 1598937883}
   - component: {fileID: 1598937882}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -9489,12 +9156,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -9514,7 +9181,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1598937883}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -9525,24 +9192,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1598937883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598937880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 1345256217}
-  m_ScoreUI: {fileID: 1712271719}
-  m_Id: 9
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &1598937884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9683,7 +9332,6 @@ GameObject:
   - component: {fileID: 1612933519}
   - component: {fileID: 1612933523}
   - component: {fileID: 1612933522}
-  - component: {fileID: 1612933521}
   - component: {fileID: 1612933520}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -9731,12 +9379,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -9756,7 +9404,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1612933521}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -9767,24 +9415,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1612933521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612933518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 266652080}
-  m_ScoreUI: {fileID: 117718314}
-  m_Id: 8
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &1612933522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10117,7 +9747,6 @@ GameObject:
   - component: {fileID: 1656998619}
   - component: {fileID: 1656998623}
   - component: {fileID: 1656998622}
-  - component: {fileID: 1656998621}
   - component: {fileID: 1656998620}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -10165,12 +9794,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -10190,7 +9819,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1656998621}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -10201,24 +9830,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1656998621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656998618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 521505427}
-  m_ScoreUI: {fileID: 2009208072}
-  m_Id: 11
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &1656998622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11245,7 +10856,6 @@ GameObject:
   - component: {fileID: 1826508462}
   - component: {fileID: 1826508466}
   - component: {fileID: 1826508465}
-  - component: {fileID: 1826508464}
   - component: {fileID: 1826508463}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -11293,12 +10903,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -11318,7 +10928,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1826508464}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -11329,24 +10939,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1826508464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1826508461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 151622287}
-  m_ScoreUI: {fileID: 948932866}
-  m_Id: 6
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &1826508465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11391,7 +10983,6 @@ GameObject:
   - component: {fileID: 1841675015}
   - component: {fileID: 1841675019}
   - component: {fileID: 1841675018}
-  - component: {fileID: 1841675017}
   - component: {fileID: 1841675016}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -11439,12 +11030,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -11464,7 +11055,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1841675017}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -11475,24 +11066,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1841675017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1841675014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 839502054}
-  m_ScoreUI: {fileID: 526935898}
-  m_Id: 21
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &1841675018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11633,7 +11206,6 @@ GameObject:
   - component: {fileID: 1872532197}
   - component: {fileID: 1872532201}
   - component: {fileID: 1872532200}
-  - component: {fileID: 1872532199}
   - component: {fileID: 1872532198}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -11681,12 +11253,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -11706,7 +11278,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1872532199}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -11717,24 +11289,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1872532199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872532196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 837025089}
-  m_ScoreUI: {fileID: 1109911707}
-  m_Id: 13
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &1872532200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12031,7 +11585,6 @@ GameObject:
   - component: {fileID: 1901296662}
   - component: {fileID: 1901296666}
   - component: {fileID: 1901296665}
-  - component: {fileID: 1901296664}
   - component: {fileID: 1901296663}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -12079,12 +11632,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -12104,7 +11657,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1901296664}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -12115,24 +11668,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1901296664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901296661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 1811244609}
-  m_ScoreUI: {fileID: 980936857}
-  m_Id: 20
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 0
 --- !u!114 &1901296665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12879,7 +12414,6 @@ GameObject:
   - component: {fileID: 2052503674}
   - component: {fileID: 2052503678}
   - component: {fileID: 2052503677}
-  - component: {fileID: 2052503676}
   - component: {fileID: 2052503675}
   m_Layer: 5
   m_Name: LevelCard(Clone)
@@ -12927,12 +12461,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -12952,7 +12486,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2052503676}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -12963,24 +12497,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2052503676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052503673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad15320f8f7d7be4298705fdeb46e9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ContentUI: {fileID: 1795122877}
-  m_ScoreUI: {fileID: 559301910}
-  m_Id: 1
-  m_Prefix: Level
-  m_Score: 0
-  m_IsUnlock: 1
 --- !u!114 &2052503677
 MonoBehaviour:
   m_ObjectHideFlags: 0
